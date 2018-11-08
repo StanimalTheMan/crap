@@ -1,4 +1,4 @@
-Fake Or Real: Are You A Mets Fan
+# Fake Or Real: Are You A Mets Fan
 Overview
 
 If you are a Mets fan, your life is rough with the Yankees as the older brother in town. I, the developer of this web app, was shook when I saw a bunch of "Mets' fans" come out of nowhere in the miraculous 2015 run.  I have had enough and I'm pretty sure you can relate...
@@ -15,14 +15,15 @@ each list can have multiple items (by embedding)
 (TODO: sample documents)
 
 An Example User:
-
+```
 {
   username: "jofez69",
   hash: // a password hash
   points: 44 // maximum number of points aka user got each all star entry (first name, last name, position (pitcher/batter), year)
   fan: true // points >= 22 means you are a fan
 }
-
+```
+```
 An Example Leaderboard?
 
 {
@@ -30,6 +31,7 @@ An Example Leaderboard?
   name: "Leaderboard",
   createdAt: // timestamp
 }
+```
 Link to Commented First Draft Schema
 (TODO: create a first draft of your Schemas in db.js and link to it)
 
