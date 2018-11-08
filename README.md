@@ -41,8 +41,7 @@ An Example AllStar: This is pre work maybe part of middlware to load the csv, pa
 }
 ```
 
-Link to Commented First Draft Schema
-[I'm an inline-style link](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/db.js)
+## [Link to Commented First Draft Schema](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/db.js)
 
 
 ## Wireframes
@@ -69,16 +68,13 @@ as a user, I can access hints?
 
 
 ## Research Topics
-(TODO: the research topics that you're planning on working on along with their point values... and the total points of research topics listed)
-
 (5 points) I will use passport for user authentication
 (3 points) Maybe I will use client side form validation using a Javascript library (have to look into this to see exactly what this is)
 (2 points) I Will try to use Boostrap for design purposes
 If I don't use client side validation, maybe I will use some other Javascript client side or server side library OR I will use a MLB API although I don't exactly know how that's going to help my limited database app
 
 
-Link to Initial Main Project File
-[I'm an inline-style link](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/app.js)
+## [Link to Initial Main Project File](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/app.js)
 
 ## Annotations / References Used
 passport.js authentication docs - (add link to source code that was based on this) I don't know how to yet
