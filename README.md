@@ -1,5 +1,3 @@
-(TODO: your project name)
-
 Fake Or Real: Are You A Mets Fan
 Overview
 
