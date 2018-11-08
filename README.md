@@ -1,18 +1,16 @@
 # Fake Or Real: Are You A Mets Fan
-Overview
+## Overview
 
 If you are a Mets fan, your life is rough with the Yankees as the older brother in town. I, the developer of this web app, was shook when I saw a bunch of "Mets' fans" come out of nowhere in the miraculous 2015 run.  I have had enough and I'm pretty sure you can relate...
 
 So this is the deal.  You will only have to know the bare minimum to attest that you are a Mets fan.  That is, simply when you get sus whether someone you know is really a Mets fan, you pop up the app and the user can register an account and take a test that asks whether you know the Mets' all stars from 2000 and onward.  I have thought about it and realize that the term, all star, is flashy and if you're remotely into the sport, you ought to know some all stars. The user has 5 minutes to submit as many as he or she can.  Hints may be supplied. It really does not test much so you might not be a fan even though you know every all star since 2000 but what is guaranteed is that if you don't get at least 50%, you are not a Mets fan.  That is, you may know that a player was an all star in one year but not know every year he or she was but that does not necessarily mean you aren't a fan etc.    
 
-Data Model
-(TODO: a description of your application's data and their relationships to each other)
+## Data Model
 
-The application will store Users, Lists and Items
 
-users make an account and there will be a leaderboard that has 
-each list can have multiple items (by embedding)
-(TODO: sample documents)
+The application will store Users, AllStars
+
+users make an account and there will be a leaderboard that has usernames and points in descending order
 
 An Example User:
 ```
@@ -33,7 +31,7 @@ An Example Leaderboard?
 }
 ```
 
-An Example AllStar: This is pre work maybe part of middlware to load the csv, parse it, make an All-Star per line and put it in the database?
+An Example AllStar: This is pre work maybe part of middlware to load the csv, parse it, make an All-Star per line and put it in the database?  Users don't add All-Stars themselves..maybe finding API is better since I manually had to put in Mets all stars into a csv file
 ```
 {
     firstName: "Jacob",
@@ -45,7 +43,7 @@ An Example AllStar: This is pre work maybe part of middlware to load the csv, pa
 
 Link to Commented First Draft Schema
 
-Wireframes
+## Wireframes
 
 /registration - page for registrating a new user
 ![Alt text](/documentation/leaderboard.jpeg?raw=true "Optional Title")
@@ -56,9 +54,10 @@ Wireframes
 /test - page for user trying to input as many all stars as possible within time limit?
 ![Alt text](/documentation/test.jpeg?raw=true "Optional Title")
 
-Site map
+## Site map
+![Alt text](/documentation/Sitemap.jpg?raw=true "Optional Title")
 
-User Stories or Use Cases
+## User Stories or Use Cases
 (TODO: write out how your application will be used through user stories and / or use cases)
 
 as non-registered user, I can register a new account with the site
@@ -76,7 +75,7 @@ Research Topics
 Link to Initial Main Project File
 (TODO: create a skeleton Express application with a package.json, app.js, views folder, etc. ... and link to your initial app.js)
 
-Annotations / References Used
+## Annotations / References Used
 None
 
 passport.js authentication docs - (add link to source code that was based on this)
