@@ -44,27 +44,19 @@ An Example AllStar: This is pre work maybe part of middlware to load the csv, pa
 ```
 
 Link to Commented First Draft Schema
-(TODO: create a first draft of your Schemas in db.js and link to it)
 
 Wireframes
-(TODO: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc.)
 
-/list/create - page for creating a new shopping list
+/registration - page for registrating a new user
+![Alt text](/documentation/leaderboard.jpeg?raw=true "Optional Title")
 
-list create
+/registration - page for showing leaderboard aka home
+![Alt text](/documentation/registration.jpeg?raw=true "Optional Title")
 
-/list - page for showing all shopping lists
-
-list
-
-/list/slug - page for showing specific shopping list
-
-list
+/test - page for user trying to input as many all stars as possible within time limit?
+![Alt text](/documentation/test.jpeg?raw=true "Optional Title")
 
 Site map
-(TODO: draw out a site map that shows how pages are related to each other)
-
-Here's a complex example from wikipedia, but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
 
 User Stories or Use Cases
 (TODO: write out how your application will be used through user stories and / or use cases)
@@ -78,23 +70,13 @@ as a user, I can cross off items in an existing grocery list
 Research Topics
 (TODO: the research topics that you're planning on working on along with their point values... and the total points of research topics listed)
 
-(5 points) Integrate user authentication
-I'm going to be using passport for user authentication
-And account has been made for testing; I'll email you the password
-see cs.nyu.edu/~jversoza/ait-final/register for register page
-see cs.nyu.edu/~jversoza/ait-final/login for login page
-(4 points) Perform client side form validation using a JavaScript library
-see cs.nyu.edu/~jversoza/ait-final/my-form
-if you put in a number that's greater than 5, an error message will appear in the dom
-(5 points) vue.js
-used vue.js as the frontend framework; it's a challenging library to learn, so I've assigned it 5 points
-10 points total out of 8 required points (TODO: addtional points will not count for extra credit)
+(5 points) I will use passport for user authentication
+
 
 Link to Initial Main Project File
 (TODO: create a skeleton Express application with a package.json, app.js, views folder, etc. ... and link to your initial app.js)
 
 Annotations / References Used
-(TODO: list any tutorials/references/etc. that you've based your code off of)
+None
 
 passport.js authentication docs - (add link to source code that was based on this)
-tutorial on vue.js - (add link to source code that was based on this)
