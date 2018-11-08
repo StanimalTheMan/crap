@@ -23,15 +23,26 @@ An Example User:
   fan: true // points >= 22 means you are a fan
 }
 ```
-```
-An Example Leaderboard?
 
+An Example Leaderboard?
+```
 {
   users: // a reference to all Users
   name: "Leaderboard",
   createdAt: // timestamp
 }
 ```
+
+An Example AllStar: This is pre work maybe part of middlware to load the csv, parse it, make an All-Star per line and put it in the database?
+```
+{
+    firstName: "Jacob",
+    lastName: "deGrom",
+    position: "Pitcher",
+    year: 2018
+}
+```
+
 Link to Commented First Draft Schema
 (TODO: create a first draft of your Schemas in db.js and link to it)
 
