@@ -42,6 +42,8 @@ An Example AllStar: This is pre work maybe part of middlware to load the csv, pa
 ```
 
 Link to Commented First Draft Schema
+[I'm an inline-style link](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/db.js)
+
 
 ## Wireframes
 
@@ -58,24 +60,25 @@ Link to Commented First Draft Schema
 ![Alt text](/documentation/Sitemap.jpg?raw=true "Optional Title")
 
 ## User Stories or Use Cases
-(TODO: write out how your application will be used through user stories and / or use cases)
-
 as non-registered user, I can register a new account with the site
 as a user, I can log in to the site
-as a user, I can create a new grocery list
-as a user, I can view all of the grocery lists I've created in a single list
-as a user, I can add items to an existing grocery list
-as a user, I can cross off items in an existing grocery list
-Research Topics
+as a user, I can take the test and try to get as many points as possible within possibly, a 5 minute timer, by entering into a form 
+-the form will refresh per entry so that I can keep entering a new entry (BUT THIS MIGHT BE BAD BECAUSE USER MIGHT LOSE TRACK AND INPUT SAME ANSWERS)
+as a user, I can view the leaderboard
+as a user, I can access hints?
+
+
+## Research Topics
 (TODO: the research topics that you're planning on working on along with their point values... and the total points of research topics listed)
 
 (5 points) I will use passport for user authentication
+(3 points) Maybe I will use client side form validation using a Javascript library (have to look into this to see exactly what this is)
+(2 points) I Will try to use Boostrap for design purposes
+If I don't use client side validation, maybe I will use some other Javascript client side or server side library OR I will use a MLB API although I don't exactly know how that's going to help my limited database app
 
 
 Link to Initial Main Project File
-(TODO: create a skeleton Express application with a package.json, app.js, views folder, etc. ... and link to your initial app.js)
+[I'm an inline-style link](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/app.js)
 
 ## Annotations / References Used
-None
-
-passport.js authentication docs - (add link to source code that was based on this)
+passport.js authentication docs - (add link to source code that was based on this) I don't know how to yet
