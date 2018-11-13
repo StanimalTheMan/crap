@@ -51,15 +51,15 @@ An Example Thread
 
 ## Wireframes
 More to Come
-
+did not do ?raw=true for the links?
 /create/thread- page for creating a new thread once logged in
-![Alt text](/documentation/createthread.jpeg?raw=true "Optional Title")
+![Alt text](/documentation/createthread.jpeg "Optional Title")
 
 / - page for showing all threads etc.
-![Alt text](/documentation/home.jpeg?raw=true "Optional Title")
+![Alt text](/documentation/home.jpeg "Optional Title")
 
 /create/thread/post - page for creating a post once logged in under a thread
-![Alt text](/documentation/createthreadpost.jpeg?raw=true "Optional Title")
+![Alt text](/documentation/createthreadpost.jpeg "Optional Title")
 
 ## Site map
 ![Alt text](/documentation/sitemap.jpg "Optional Title")
