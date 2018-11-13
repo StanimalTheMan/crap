@@ -1,7 +1,6 @@
 /*
-   I do not know how I am going to implement most of my stuff. like setting a timer for user's inputting as many all stars as possible,
-   hints possibly, registrating an user (whether I make a user make a password and supply a confirm password option as well) etc. so below
-   is generic app.js stuff that I've been doing for homeworks in past and from Mr. Versoza's sample documentation.
+   I do not know how I am going to implement most of my stuff. esp making sure users keep this a baseball forum and not a general forum if that's important for this project
+   slugs and in general the specific routes idk yet
 */
 
 require('./db');

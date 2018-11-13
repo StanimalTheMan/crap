@@ -62,7 +62,7 @@ More to Come
 ![Alt text](/documentation/createthreadpost.jpeg?raw=true "Optional Title")
 
 ## Site map
-![Alt text](/documentation/sitemap.jpg?raw=true "Optional Title")
+![Alt text](/documentation/sitemap.jpg "Optional Title")
 
 ## User Stories or Use Cases
 as non-registered user, I can register a new account with the site
