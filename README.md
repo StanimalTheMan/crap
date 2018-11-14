@@ -57,7 +57,7 @@ did not do ?raw=true for the links?
 ![Alt text](/documentation/registerforfirsttime.jpeg "Optional Title")
 
 /diaries/:slug/entries/add
-![Alt text](/documentation/postentryforfirsttime.jpeg "Optional Title")
+![Alt text](/documentation/postentryunderdiary.jpeg "Optional Title")
 
 ## Site map
 ![Alt text](/documentation/sitemap.jpg "Optional Title")
