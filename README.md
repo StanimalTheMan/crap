@@ -42,14 +42,21 @@ An Example Entry:
 ## Wireframes
 More to Come
 did not do ?raw=true for the links?
-/create/thread- page for creating a new thread once logged in
-![Alt text](/documentation/createthread.jpeg "Optional Title")
 
-/ - page for showing all threads etc.
-![Alt text](/documentation/home.jpeg "Optional Title")
+/ - homepage
+![Alt text](/home.jpeg "Optional Title")
 
-/create/thread/post - page for creating a post once logged in under a thread
-![Alt text](/documentation/createthreadpost.jpeg "Optional Title")
+/diaries/add
+![Alt text](/creatediaryonceloggedin.jpeg "Optional Title")
+
+/login
+![Alt text](/login.jpeg "Optional Title")
+
+/register
+![Alt text](/registerforfirsttime.jpeg "Optional Title")
+
+/diaries/:slug/entries/add
+![Alt text](/postentryforfirsttime.jpeg "Optional Title")
 
 ## Site map
 ![Alt text](/documentation/sitemap.jpg "Optional Title")
