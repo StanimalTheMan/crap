@@ -9,6 +9,7 @@ It may just be me, but if there is any truth to it, the idea that diaries are la
 The application will store Users, Diaries, Entries at MINIMUM.
 
 users make an account and can then create an new thread or post in a thread etc.
+
 An Example User:
 ```
 {
@@ -44,19 +45,19 @@ More to Come
 did not do ?raw=true for the links?
 
 / - homepage
-![Alt text](/home.jpeg "Optional Title")
+![Alt text](/documentation/home.jpeg "Optional Title")
 
 /diaries/add
-![Alt text](/creatediaryonceloggedin.jpeg "Optional Title")
+![Alt text](/documentation/creatediaryonceloggedin.jpeg "Optional Title")
 
 /login
-![Alt text](/login.jpeg "Optional Title")
+![Alt text](/documentation/login.jpeg "Optional Title")
 
 /register
-![Alt text](/registerforfirsttime.jpeg "Optional Title")
+![Alt text](/documentation/registerforfirsttime.jpeg "Optional Title")
 
 /diaries/:slug/entries/add
-![Alt text](/postentryforfirsttime.jpeg "Optional Title")
+![Alt text](/documentation/postentryforfirsttime.jpeg "Optional Title")
 
 ## Site map
 ![Alt text](/documentation/sitemap.jpg "Optional Title")
