@@ -11,23 +11,22 @@ const mongoose = require('mongoose');
 const User = new mongoose.Schema({
   // username provided by authentication plugin
   // password hash provided by authentication plugin
-  username: String,
+  username: String,//this suffices no first name or last name in my diary app
   hash: String,// a password hash using passport
-  posts: [Post]//embedded documents?
+  diaries: [Diary]//embedded documents?
 });
 
-const Post = new mongoose.Schema({
-  author: {type: String, default: 'Anon'},
-  date: {type: Date, default: Date.now},
-  post: String
+const Diary = new mongoose.Schema({
+  title: String,//for example you want separate diaries for your medicine usage, your baseball career, your significant achievements, OR maybe you want everything in one diary for some reason
+  author: {type: String},//most likely author will be username
+  date: {type: String, validate: [/\d\d\d\d-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])/]},//{type: Date, default: Date.now},
+  entries: [Entry]
 });
 
-const Thread = new mongoose.Schema({
-  //userid: String,
-  title: String,
-  author: {type: String, default: 'Anon'},
-  date: {type: Date, default: Date.now},
-  posts: [Post]//embedded documents
+const Entry = new mongoose.Schema({
+  title: String,//optional
+  entry: String//start writing that essay of yours lol
+
 });
 
 //Above looks like a generic forum how do I ensure it's baseball based?

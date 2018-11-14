@@ -1,48 +1,38 @@
-# MLB Free Agent Frenzy
+# Diary for Days
 ## Overview
 
-Baseball is America's pastime and even after the last pitch is thrown in the World Series, it is still exciting as your favorite superstars and many other good players can join your favorite team from free agency.  
-
-What better way is there to talk about this stuff as an avid fan than to join a baseball forum and talk about all the free agents you want your team to get with other baseball fans?  Of course, other websites exist, but this website will try to be more than just posts and threads...depending on how things go, you can possibly make polls as well and have real time chat functionality?    
+It may just be me, but if there is any truth to it, the idea that diaries are lame for adults, men, etc. is simply NOT true.  Whether you are taking medications or dealing with severe depression, sometimes it's starting that is the hardest part.  While starting to use this app is your initiative, using this diary app can help you.  Let's use the aforementioned examples.  If you are taking a depression medication or having chemo, your doctor only sees you once or twice a month; you might notice a change in your body and that change can prevent you from doing further damage to yourself and can prompt you to schedule an earlier appointment.  In regards to depression, maybe writing about something you like daily is something we all ought to do.  Now, this may sound grim, but if your life is afloat, feel free to write about all the good things that are happening in your life since nothing should be taken for granted.  When dark times eventually come, you can at least reflect on those abundant good days in your life.   
 
 ## Data Model
 
 
-The application will store Users, Posts, and Threads at minimum.
+The application will store Users, Diaries, Entries at MINIMUM.
 
 users make an account and can then create an new thread or post in a thread etc.
 An Example User:
 ```
 {
-  username: "jofez16",
+  username: "",
   hash: // a password hash
-  posts: ['Manny Machado is sexy'];//should I just add post property of //post or actually use embedded documents?
+  diaries: [Diary]
 }
 ```
 
-An Example Post
+An Example Diary:
 ```
 {
-  author: type: 'jofez16',
-  date: 11-09-18,
-  post: "Manny Machado is sexy."
+  title: 'My Viagra Days',//assume that the user is documenting how his use of Viagra is affecting his health, sexual performance, etc. daily hopefully 
+  author: 'marek69',//most likely author will be username
+  date: `02-14-19',
+  entries: [Entry]
 }
 ```
 
-An Example Thread
+An Example Entry:
 ```
 {
-  userid: 'jofez16',
-  title: 'Player: Manny Machado',
-  date: 11-09-18,
-  posts: ["Manny Machado is sexy."] 
-  /*
-  posts:[{
-  author: type: 'jofez16',
-  date: 11-09-18,
-  post: "Manny Machado is sexy."
-}];
-*/
+  title: "Bad Day - Viagra Ruined Me",//optional
+  entry: "I woke up and I was still erect.  I may have to lower the dosage...if I still see problems tomorrow, I will go to the doctors..."//start writing that essay of yours lol
 }
 ```
 
@@ -68,9 +58,9 @@ did not do ?raw=true for the links?
 as non-registered user, I can register a new account with the site
 after registration:
 as a user, I can log in to the site
-as a user, I can create a new thread.
-as a user, I can post on a thread.
-as a user, I can report users?
+as a user, I can create a new diary (even after my first diary if I want to be organized and consolidate different areas of my life by making different diaries)
+as a user, I can create an entry in a diary.
+as a user, I can post public diary entries in homepage if I want to?  Perhaps I want to provide motivation to others with my life...IDK sounds bad though since diaries are inherently private and idk if seeing only good diary entries is good for sad users
 
 
 ## Research Topics
