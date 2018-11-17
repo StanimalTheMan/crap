@@ -1,4 +1,13 @@
-body {
-    background-image: url("img_tree.gif"), url("paper.gif");
-    background-color: #cccccc;
+.header {
+    font-family: monospace;
+    color: green;
 }
+
+.nameOfApp {
+    text-align: center;
+}
+
+.loggedInStatus {
+    font-size: 25px;
+}
+

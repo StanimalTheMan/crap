@@ -5,6 +5,17 @@
 	<title></title>
 	<link rel="stylesheet" href="/css/site.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
+<div class="header">
+	<h1 class="nameOfApp"><a href="/">DIARY FOR DAYS</a></h1>	
+	{{#if user}} 
+		<p class="loggedInStatus">Logged in as {{user.username}}</p>
+		<h2><a href="/diaries/add">CREATE DIARY</a></h2>
+	{{else}}
+		<h2><a href="/register">REGISTER</a></h2>
+		<h2><a href="/login">LOGIN</a></h2>
+	{{/if}}
+
+</div>
 <body>
 	{{{body}}}
 </body>

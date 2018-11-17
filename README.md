@@ -68,7 +68,7 @@ after registration:
 as a user, I can log in to the site
 as a user, I can create a new diary (even after my first diary if I want to be organized and consolidate different areas of my life by making different diaries)
 as a user, I can create an entry in a diary.
-as a user, I can post public diary entries in homepage if I want to?  Perhaps I want to provide motivation to others with my life...IDK sounds bad though since diaries are inherently private and idk if seeing only good diary entries is good for sad users
+
 
 
 ## Research Topics

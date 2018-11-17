@@ -1,0 +1,8 @@
+{{#if diaries}}
+    <h2>My Diaries</h2>
+{{/if}}
+<ol>
+    {{#each diaries}}
+        <li><a href="/mydiaries/{{slug}}">{{slug}}</a> - {{description}}</li>
+    {{/each}}
+</ol>
