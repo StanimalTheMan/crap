@@ -1,3 +1,11 @@
+<h2 id="diarytitle">{{diaryname}}</h2>
+<h2>Click on a Date Below to View And/Or Modify Corresponding Entry</h2>
+<ul>
+	{{#each entries}}
+		<li><a href="/myentries">{{this.date}}</a></li><!--for some reason i could not find a way to put diary's title in url idk-->
+	{{/each}}
+</ul>
+
 <h2>Add new Entry</h2>
 {{#if message}}
 <div class="error">{{ message }}</div>

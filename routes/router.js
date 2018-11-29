@@ -6,7 +6,8 @@ const passport = require('passport');
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
 const Diary = mongoose.model('Diary');
-//require('./../auth');
+const Entry = mongoose.model('Entry');
+
 
 const bodyParser = require('body-parser');
 
@@ -39,7 +40,13 @@ router.post('/register', function(req, res) {//test if this code works
             res.render('register',{message:'Your registration information is not valid'});
         } else {
             passport.authenticate('local')(req, res, function() {
-                res.redirect('/');
+                //res.redirect('/');
+                req.logIn(user, function (err) {
+                    //console.log(user);
+                    req.session.user = user;
+                    //console.log(req.user);
+                    res.redirect('/');//success
+                });
             });
         }
     }); 
@@ -61,13 +68,13 @@ router.post('/login', function(req, res, next) {
                 res.redirect('/');//success
             });
         } else {
-            res.render('login', {message: 'Login or Password is invalid.'});
+            res.render('login', {message: 'Username or Password is invalid.'});
         }
     })(req, res, next);
 });
 
 //add a new diary once logged in
-router.get('/diaries/add', function(req, res, next) {
+router.get('/diaries/add', function(req, res) {
     if (req.session.user) {
         res.render('diary-add');
     } else {
@@ -75,7 +82,7 @@ router.get('/diaries/add', function(req, res, next) {
     }
 });
 
-router.post('/diaries/add', function(req, res, next) {
+router.post('/diaries/add', function(req, res) {
     if (req.session.user) {
         new Diary({
             userid: req.session.user.username,
@@ -93,9 +100,50 @@ router.post('/diaries/add', function(req, res, next) {
 
 //to access one of your diaries to possibly add a new entry, read your past entries, etc.
 router.get('/mydiaries/:slug', (req, res) => {
-    Diary.findOne({slug: req.params.slug}, (err, diary) => {
-        res.render('view-or-modify-diary', {diary});
+    if (req.session.user) {
+        Diary.findOne({slug: req.params.slug}, (err, diary) => {
+            //console.log(req.params.slug);
+            res.render('view-or-modify-diary', {diaryname: diary.title.toUpperCase(), entries: diary.entries});
+            
+        });
+    } else {
+        res.redirect('/');
+    }
+});
+
+
+router.post('/mydiaries/:slug', (req, res) => {
+    new Entry({
+        title: req.body.title,
+        date: req.body.date,
+        entry: req.body.entry
+    }).save((saveErr) => {
+        if (saveErr) {
+            console.log(saveErr);
+            res.render('view-or-modify-diary', {message: 'Error saving'});
+        } else {
+            //console.log(req.params.slug);
+            //console.log(req.session.user.username);
+            Diary.findOneAndUpdate({userid: req.session.user.username}, {$push: {entries: {title: req.body.title, date: req.body.date, entry: req.body.entry}}}, function(err, diary, count) {
+                console.log(err, diary, count);
+            });
+            res.redirect('/');//maybe not the best redirect
+        }
     });
+});
+
+//LOGOUT w/ help from passport docs - http://www.passportjs.org/docs/logout/
+//and good ol' https://stackoverflow.com/questions/13758207/why-is-passportjs-in-node-not-removing-session-on-logout
+router.get('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        //console.log(err);
+        res.redirect('/');
+    });
+    /*
+    req.logout();
+    delete req.user;
+    res.redirect('/');//can fire before session is destroyed?
+    */
 });
 
 //export router

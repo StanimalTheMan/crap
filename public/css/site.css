@@ -1,13 +1,33 @@
 .header {
     font-family: monospace;
     color: green;
+    position: relative;
 }
 
 .nameOfApp {
     text-align: center;
 }
 
-.loggedInStatus {
+#loggedInStatus {
+    position: fixed;
+    top: 20px;
+    right: 10px;
     font-size: 25px;
 }
 
+#diarytitle {
+    text-align: center;
+}
+
+.loggedInOption {
+   position: fixed;
+   top: 60px;
+   right: 10px;
+   text-align: right;
+}
+
+#logout {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}

@@ -1,0 +1,8 @@
+{{#if entries}}
+    <h2>My Entries</h2>
+{{/if}}
+<ol>
+    {{#each entries}}
+        <li><a href="/myentries/{{slug}}">{{slug}}</a> - {{date}}</li>
+    {{/each}}
+</ol>

@@ -8,8 +8,11 @@
 <div class="header">
 	<h1 class="nameOfApp"><a href="/">DIARY FOR DAYS</a></h1>	
 	{{#if user}} 
-		<p class="loggedInStatus">Logged in as {{user.username}}</p>
-		<h2><a href="/diaries/add">CREATE DIARY</a></h2>
+		<p id="loggedInStatus">Logged in as {{user.username}}</p>
+		<h2 class="loggedInOption"><a href="/diaries/add">CREATE DIARY</a></h2>
+		<form id="logout" action="/logout">
+			<input type="submit" value="LOGOUT">
+		</form>
 	{{else}}
 		<h2><a href="/register">REGISTER</a></h2>
 		<h2><a href="/login">LOGIN</a></h2>
