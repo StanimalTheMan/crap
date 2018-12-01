@@ -9,10 +9,10 @@ const passportLocalMongoose = require('passport-local-mongoose');//add propertie
 // * so users have a username and 
 
 const EntrySchema = new mongoose.Schema({
-  title: String,//optional
-  entry: {type: String, required: true},//start writing that essay of yours lol
+  title: {type: String, sparse: true},//optional
+  entry: {type: String, required: true, sparse: true},//start writing that essay of yours lol
   //diaryid: String,//redundant but helps me loop over and make links in view-modify-diary.hbs?
-  date: {type: String, validate: [/\d\d\d\d-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])/], required: true}//{type: Date, default: Date.now}, USING TYPE DATA IS BETTER? //regex found on so
+  date: {type: String, validate: [/\d\d\d\d-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])/], required: true, sparse: true}//{type: Date, default: Date.now}, USING TYPE DATA IS BETTER? //regex found on so
 });
 
 const DiarySchema = new mongoose.Schema({

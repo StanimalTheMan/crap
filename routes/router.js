@@ -90,6 +90,7 @@ router.post('/diaries/add', function(req, res) {
             description: req.body.description
         }).save((saveErr) => {
             if (saveErr) {
+                console.log(saveErr);
                 res.render('diary-add', {message: "Sorry could not register your diary. Try again."});
             } else {
                 res.redirect('/');
@@ -119,13 +120,13 @@ router.post('/mydiaries/:slug', (req, res) => {
         entry: req.body.entry
     }).save((saveErr) => {
         if (saveErr) {
-            console.log(saveErr);
+            //console.log(saveErr);
             res.render('view-or-modify-diary', {message: 'Error saving'});
         } else {
-            //console.log(req.params.slug);
+            console.log(req.params.slug);
             //console.log(req.session.user.username);
-            Diary.findOneAndUpdate({userid: req.session.user.username}, {$push: {entries: {title: req.body.title, date: req.body.date, entry: req.body.entry}}}, function(err, diary, count) {
-                console.log(err, diary, count);
+            Diary.findOneAndUpdate({userid: req.session.user.username, slug: req.params.slug}, {$push: {entries: {title: req.body.title, date: req.body.date, entry: req.body.entry}}}, function(err, diary, count) {
+                //console.log(err, diary, count);
             });
             res.redirect('/');//maybe not the best redirect
         }

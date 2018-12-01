@@ -28,6 +28,15 @@
 
 #logout {
     position: absolute;
-    right: 10px;
-    top: 5px;
+    right: 20px;
+    top: 100px;;
+}
+
+.listofdiaries {
+    font-size: 25px;
+}
+
+#carouselheader {
+    font-style: italic;
+    text-align: center;
 }

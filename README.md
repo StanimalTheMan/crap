@@ -73,10 +73,12 @@ as a user, I can create an entry in a diary.
 
 ## Research Topics
 (5 points) I will use passport for user authentication
-(3 points) Maybe I will use client side form validation using a Javascript library (have to look into this to see exactly what this is)
-(2 points) I Will try to use Sass or something else for design.
+(3 points) Selenium automative testing
+(2 points) I did minimal Bootstrap.
 
 ## [Link to Initial Main Project File](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/app.js)
 
 ## Annotations / References Used
-passport.js authentication docs - (add link to source code that was based on this) I don't know how to yet
+passport.js authentication docs - http://www.passportjs.org/docs/
+bootstrap - https://www.youtube.com/watch?v=lAUncPg_FVw, https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
