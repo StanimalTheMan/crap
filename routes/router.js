@@ -15,6 +15,10 @@ const bodyParser = require('body-parser');
 // body parser setup
 router.use(bodyParser.urlencoded({ extended: false }));
 
+//callback for reduce
+const reducer = (accumulator, currVal) => ++accumulator;
+
+
 //route handlers
 
 //home page
@@ -24,7 +28,16 @@ router.get('/', (req, res) => {
             res.render('index', {diaries: diaries});
         });
     } else {
-        res.render('index');
+        //use hof reduce to display total number of users on site?
+        //HOF USES 1-3
+        User.find(function(err, users) {
+            const totalUsersRegistered = users.reduce(reducer, 0);
+            Diary.find(function(err, diaries) {
+                const totalDiaries = diaries.reduce(reducer, 0);
+                const activeDiaries = diaries.filter(diary => diary.entries.length >= 1);
+                res.render('index', {tot: totalUsersRegistered, totd: totalDiaries, started: activeDiaries.length});
+            });
+        });
     }
 });
 
