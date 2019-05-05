@@ -47,7 +47,7 @@ router.get('/register', (req, res) => {
 });
 
 router.post('/register', function(req, res) {//test if this code works
-    User.register(new User({username:req.body.username}), //will change this code as this is from docs and slides for now
+    User.register(new User({username:req.body.username}),
     req.body.password, function(err, user){
         if (err) {
             res.render('register',{message:'Your registration information is not valid'});
@@ -133,31 +133,20 @@ router.post('/mydiaries/:slug', (req, res) => {
         entry: req.body.entry
     }).save((saveErr) => {
         if (saveErr) {
-            //console.log(saveErr);
             res.render('view-or-modify-diary', {message: 'Error saving'});
         } else {
             console.log(req.params.slug);
-            //console.log(req.session.user.username);
             Diary.findOneAndUpdate({userid: req.session.user.username, slug: req.params.slug}, {$push: {entries: {title: req.body.title, date: req.body.date, entry: req.body.entry}}}, function(err, diary, count) {
-                //console.log(err, diary, count);
             });
-            res.redirect('/');//maybe not the best redirect
+            res.redirect('/');
         }
     });
 });
 
-//LOGOUT w/ help from passport docs - http://www.passportjs.org/docs/logout/
-//and good ol' https://stackoverflow.com/questions/13758207/why-is-passportjs-in-node-not-removing-session-on-logout
 router.get('/logout', (req, res) => {
     req.session.destroy((err) => {
-        //console.log(err);
         res.redirect('/');
     });
-    /*
-    req.logout();
-    delete req.user;
-    res.redirect('/');//can fire before session is destroyed?
-    */
 });
 
 //export router

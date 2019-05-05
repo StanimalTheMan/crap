@@ -6,13 +6,12 @@ const passportLocalMongoose = require('passport-local-mongoose');//add propertie
 
 // users
 // * our site requires authentication...
-// * so users have a username and 
+// * so users have a username 
 
 const EntrySchema = new mongoose.Schema({
   title: {type: String, sparse: true},//optional
-  entry: {type: String, required: true, sparse: true},//start writing that essay of yours lol
-  //diaryid: String,//redundant but helps me loop over and make links in view-modify-diary.hbs?
-  date: {type: String, validate: [/\d\d\d\d-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])/], required: true, sparse: true}//{type: Date, default: Date.now}, USING TYPE DATA IS BETTER? //regex found on so
+  entry: {type: String, required: true, sparse: true},
+  date: {type: String, validate: [/\d\d\d\d-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])/], required: true, sparse: true}
 });
 
 const DiarySchema = new mongoose.Schema({
@@ -33,13 +32,12 @@ const UserSchema = new mongoose.Schema({
 // TODO: add remainder of setup for slugs, connection, registering models, etc. below
 UserSchema.plugin(passportLocalMongoose);
 DiarySchema.plugin(URLSlugs('title', {field: 'slug'}));
-//EntrySchema.plugin(URLSlugs('date', {field: 'slug'}));//DO I DO THIS?
 
 mongoose.model('User', UserSchema);
 mongoose.model('Diary', DiarySchema);
 mongoose.model('Entry', EntrySchema);
 
-// is the environment variable, NODE_ENV, set to PRODUCTION? 
+
 let dbconf;
 if (process.env.NODE_ENV === 'PRODUCTION') {
  // if we're in PRODUCTION mode, then read the configration from a file

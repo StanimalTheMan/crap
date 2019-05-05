@@ -1,7 +1,3 @@
-/*
-   I do not know how I am going to implement most of my stuff. esp making sure users keep this a baseball forum and not a general forum if that's important for this project
-   slugs and in general the specific routes idk yet
-*/
 require('./db');
 require('./auth');
 const myRouter = require('./routes/router');
