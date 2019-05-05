@@ -37,9 +37,6 @@ An Example Entry:
 }
 ```
 
-## [Link to Commented First Draft Schema](https://github.com/StanimalTheMan/StanimalTheMan-final-project/blob/master/db.js)
-
-
 ## Wireframes
 More to Come
 did not do ?raw=true for the links?
@@ -74,10 +71,9 @@ as a user, I can create an entry in a diary.
 ## Research Topics
 (5 points) I will use passport for user authentication
 (3 points) mocha
-## [Link to mocha](https://github.com/StanimalTheMan/StanimalTheMan-final-project/blob/master/test/test.js)
-(2 points) I did minimal Bootstrap.
+(2 points) I used Bootstrap.
 
-## [Link to Initial Main Project File](https://github.com/StanimalTheMan/StanimalTheMan-final-project/blob/master/app.js)
+## [Link to Initial Main Project File](https://github.com/StanimalTheMan/diary_for_days/blob/master/app.js)
 
 ## Annotations / References Used
 passport.js authentication docs - http://www.passportjs.org/docs/
