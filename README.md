@@ -37,7 +37,7 @@ An Example Entry:
 }
 ```
 
-## [Link to Commented First Draft Schema](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/db.js)
+## [Link to Commented First Draft Schema](https://github.com/StanimalTheMan/StanimalTheMan-final-project/blob/master/db.js)
 
 
 ## Wireframes
@@ -74,10 +74,10 @@ as a user, I can create an entry in a diary.
 ## Research Topics
 (5 points) I will use passport for user authentication
 (3 points) mocha
-## [Link to mocha](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/test/test.js)
+## [Link to mocha](https://github.com/StanimalTheMan/StanimalTheMan-final-project/blob/master/test/test.js)
 (2 points) I did minimal Bootstrap.
 
-## [Link to Initial Main Project File](https://github.com/nyu-csci-ua-0480-001-003-fall-2018/StanimalTheMan-final-project/blob/master/app.js)
+## [Link to Initial Main Project File](https://github.com/StanimalTheMan/StanimalTheMan-final-project/blob/master/app.js)
 
 ## Annotations / References Used
 passport.js authentication docs - http://www.passportjs.org/docs/
